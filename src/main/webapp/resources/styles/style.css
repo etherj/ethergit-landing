@@ -7,98 +7,141 @@ GLOBAL >>>
 html, body {
     height: 100%;
     width: 100%;
-    color: white;
+    position: relative;
+    min-height: 575px;
 }
 
-body {
+video {
+    position: fixed; 
+    right: 0; 
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto; 
+    z-index: -100;
     background: url(../images/fallback_background.jpg) scroll 0 0 no-repeat;
-    background-position: center;
     background-size: cover;
 }
 
 .wrapper {
+    width: 75%;
     min-width: 1100px;
-    width: 70%;
-    height: auto;
     margin: 0 auto;
-    padding-top: 10%;
 }
 
 .indenter {
+    overflow: hidden;
     text-indent: -9999px;
 }
 
-p {
-    font-size: 41px;
-    color: #ffffff;
-    font-weight: 300;
-    margin-top: 85px;
-    line-height: 48px;
-}
-
-.bold-800 {
+.weight-800 {
     font-weight: 800;
 }
 
-video {
-    position: fixed; right: 0; bottom: 0;
-    min-width: 100%; min-height: 100%;
-    width: auto; height: auto; z-index: -100;
-    background-size: cover;
-}
-
 /*==================================================================================================================
-==================================================================================================================== <<< GLOBAL
+====================================================================================================================
+<<< GLOBAL
 ====================================================================================================================
 ==================================================================================================================*/
 
-.logo {
+/*==================================================================================================================
+====================================================================================================================
+BODY >>>
+====================================================================================================================
+==================================================================================================================*/
+
+section {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.logo-holder {
     height: 70px;
     width: 238px;
-    background: url('../images/logo_white.png') scroll 0 0 no-repeat;
-}
-
-.follow {
-    height: 137px;
-    width: 289px;
-    background: url(../images/follow.png) scroll 0 0 no-repeat;
-    background-position: bottom;
     float: left;
-    cursor: pointer;
-    line-height: 160px;
-    margin-top: 50px;
+    background: url(../images/logo_white.png) scroll 0 0 no-repeat;
 }
 
-.ask {
+.content-holder {
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    margin-top: -275px;
+}
+
+.content-holder > p {
+    float: left;
+    clear: both;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 41px;
+    margin-top: 70px;
+    line-height: 48px;
+    letter-spacing: 0.025em;
+}
+
+.call-to-action {
+    float: left;
+    border: 0;
+    padding: 0;
+    outline: 0;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 18px;
+    letter-spacing: 0.025em;
+}
+
+.action-follow {
+    clear: both;
+    background: url(../images/follow.png);
+    height: 126px;
+    width: 289px;
+    margin-top: 71px;
+    font-weight: 700;
+    line-height: 137px;
+}
+
+.action-ask {
+    background: url(../images/ask.png);
     height: 137px;
     width: 255px;
-    background: url(../images/ask.png) scroll 0 0 no-repeat;
-    float: left;
-    cursor: pointer;
-    line-height: 160px;
-    margin-top: 50px;
-    margin-left: 15px;
+    margin: 60px 0 0 15px;
+    font-weight: 400;
+    padding: 11px 0 0 0;
+    line-height: 137px;
 }
 
-h6 {
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: 400;
-    text-align: center;
-}
+/*==================================================================================================================
+====================================================================================================================
+<<< BODY
+====================================================================================================================
+==================================================================================================================*/
+
+/*==================================================================================================================
+====================================================================================================================
+FOOTER >>>
+====================================================================================================================
+==================================================================================================================*/
 
 footer {
-    height: 60px;
+    height: 50px;
     width: 100%;
+    background-color: #070f20;
     position: fixed;
     bottom: 0;
-    background-color: #070f20;
 }
 
-.logo-small {
-    height: 24px;
-    width: 170px;
-    background: url(../images/logo_white_small.png) scroll 0 0 no-repeat;
+.footer-logo {
     float: right;
-    margin: 18px;
+    margin: 13px 0;
 }
+
+/*==================================================================================================================
+====================================================================================================================
+<<< FOOTER
+====================================================================================================================
+==================================================================================================================*/

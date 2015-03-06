@@ -6,60 +6,60 @@
 
     <!-- >>> TITLE >>> -->
 
-    <title>EtherGit | THE web gate into Ethereum.</title>
+		<title>EtherGit | The first web gate into Ethereum.</title>
 
-    <!-- >>> META >>> -->
+        <!-- >>> META TAGS >>> -->
 
-    <meta charset='UTF-8'/>
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
+		<meta charset='UTF-8'>
+		<meta name="keywords" content="client input missing" />
+		<meta name="description" content="client input missing" />
 
-    <!-- >>> STYLES/CSS >>> -->
+        <!-- >>> STYLES/CSS >>> -->
 
-    <link href="/resources/styles/reset.css" rel="stylesheet" type="text/css" />
-    <link href="/resources/styles/style.css" rel="stylesheet" type="text/css" />
-    <link rel="SHORTCUT ICON" href="/resources/images/favicon.png"/>
+        <link rel="SHORTCUT ICON" href="/resources/images/favicon.png"/>
+        <link href="/resources/styles/reset.css" rel="stylesheet" type="text/css" />
+		<link href="/resources/styles/style.css" rel="stylesheet" type="text/css" />
 
+        <!-- >>> SCRIPTS/JS >>> -->
 
-    <!-- >>> SCRIPT/JS >>> -->
+        <script src="/resources/scripts/jquery-1.11.1/jquery-1.11.1.min.js" type="text/javascript"></script>
+        <script src="/resources/scripts/jquery-ui-1.11.0/jquery-ui.min.js" type="text/javascript"></script>
+        <script src="/resources/scripts/script.js" type="text/javascript"></script>
 
-    <script src="/resources/scripts/jquery-1.11.1/jquery-1.11.1.min.js" type="text/javascript"></script>
-    <script src="/resources/scripts/jquery-ui-1.11.0/jquery-ui.min.js" type="text/javascript"></script>
-    <script src="/resources/scripts/script.js" type="text/javascript"></script>
+	</head>
 
-</head>
+	<body>
 
-<body>
+        <video id="bgVideo" autoplay loop poster="/resourcesx/images/fallback_background.jpg">
+            <source src="/resources/images/stars.mov" type="video/webm">
+            <source src="/resources/images/stars.ogv" type="video/ogg">
+            <source src="/resources/images/stars.mp4" type="video/mp4">
+        </video>
 
-<!--<video autoplay loop poster="/resources/images/fallback_background.jpg">-->
-    <!--<source src="/resources/images/stars.mov" type="video/webm">-->
-    <!--<source src="/resources/images/stars.ogv" type="video/ogg">-->
-    <!--<source src="/resources/images/stars.mp4" type="video/mp4">-->
-<!--</video>-->
+        <section>
 
-<div class="wrapper">
+            <div class="wrapper content-holder">
 
-    <div class="logo indenter">
-        <h1>EtherGit</h1>
-    </div>
+                <a href="http://www.ethergit.com/"><div class="logo-holder indenter">
+                    <h1>Welcome to EtherGit | THE web gate to Ethereum.</h1>
+                </div></a>
 
-    <p><span class="bold-800">Ethereum is going live</span> <br> and we are building the best <br> web gate into the matrix.</p>
+                <p> <span class="weight-800"> Ethereum is going live </span> </br> and we are building the best </br> web gate into the matrix.</p>
 
-    <div class="follow">
-        <h6><a href="http://dev.ethergit.com">dev.ethergit.com</a></h6>
-    </div>
+                <a href="http://dev.ethergit.com/" target="_self"><button class="call-to-action action-follow">dev.ethergit.com</button></a>
+                <a href="http://forum.ethergit.com/categories/all" target="_self"><button class="call-to-action action-ask">ask us anything</button></a>
 
-    <div class="ask">
-        <h6><a href="http://forum.ethergit.com/categories/all">ask us anything<a></h6>
-    </div>
+            </div>
 
-</div>
+        </section>
 
-<footer>
+        <footer>
 
-    <div class="logo-small"></div>
+            <div class="wrapper">
+                <a href="http://www.ethergit.com/"><img class="footer-logo" src="/resources/images/logo_white_small.png" height="24" width="107" alt="EtherGit | THE web gate to etherium" title="EtherGit | THE web gate to etherium" /></a>
+            </div>
 
-</footer>
+        </footer>
 
     <script th:replace="fragments::analytics"></script>
 
