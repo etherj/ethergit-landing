@@ -1,0 +1,671 @@
+/*==================================================================================================================
+====================================================================================================================
+GLOBAL >>>
+====================================================================================================================
+==================================================================================================================*/
+
+html, body {
+    height: 100%;
+    /*min-height: 768px;*/
+    width: 100%;
+    min-width: 1024px;
+}
+
+.main-wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+::-webkit-scrollbar {  
+    width: 12px;  
+}  
+::-webkit-scrollbar-track {  
+    background-color: #eaeaea;  
+    /*border-left: 1px solid #ccc;  */
+}  
+::-webkit-scrollbar-thumb {  
+    background-color: #ccc;  
+}  
+::-webkit-scrollbar-thumb:hover {  
+    background-color: #aaa;  
+}  
+
+/*==================================================================================================================
+==================================================================================================================== <<< GLOBAL
+====================================================================================================================
+==================================================================================================================*/
+
+/*==================================================================================================================
+====================================================================================================================
+HEADER >>>
+====================================================================================================================
+==================================================================================================================*/
+
+header {
+    height: 100px;
+    width: 100%;
+}
+
+.user-login {
+    height: 50px;
+    width: 100%;
+    background: #fafafa;
+}
+
+.top-menu {
+    height: 50px;
+    width: 100%;
+    background: url(../images/top_menu_bg.jpg) scroll 0 0 no-repeat;
+    background-size: cover;
+}
+
+/*==================================================================================================================
+USER LOGIN >>>
+==================================================================================================================*/
+
+.logo-holder {
+    height: 50px;
+    width: 185px;
+    float: left;
+    text-indent: -9999px;
+    background: grey;
+    background: url(../images/arrata_logo.png) scroll 0 0 no-repeat;
+}
+
+.login-details-holder > ul {
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+
+.login-details-holder > ul > li {
+    float: right;
+    width: auto;
+    height: 38px;
+    color: #999999;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 38px;
+    margin: 6px 10px 6px 10px;
+}
+
+.login-details-holder > ul > li:first-child {
+    width: 38px;
+    background: url(../images/logout_button.png) scroll 0 0 no-repeat;
+    cursor: pointer;
+    text-indent: -9999px;
+}
+
+.login-details-holder > ul > li:first-child:hover {
+    background: url(../images/logout_button.png) scroll 0 -38px no-repeat;
+}
+
+/*==================================================================================================================
+TOP LEVEL MENU >>>
+==================================================================================================================*/
+
+.top-menu > ul {
+    float: left;
+    width: 90%;
+    height: 100%;
+}
+
+.top-menu > ul > li {
+    float: left;
+    /*width: 35px;
+    height: 35px;*/
+    height: 100%;
+    width: auto;
+    /*margin: 7px 23px 8px 7px;*/
+    /*text-indent: -9999px;*/
+    cursor: pointer;
+    /*opacity: 0.8;*/
+}
+
+.top-menu > ul > li > img {
+    float: left;
+}
+
+.top-menu > ul > li > h1 {
+    float: left;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 18px 18px;
+    text-transform: uppercase;
+    color: #ffffff;
+    -webkit-transition: background 0.2s ease-in-out;
+    -moz-transition: background 0.2s ease-in-out;
+    -o-transition: background 0.2s ease-in-out;
+    -ms-transition: background 0.2s ease-in-out;
+    transition: background 0.2s ease-in-out;
+}
+
+.top-menu > ul > li > h1:hover {
+    /*opacity: 1;*/
+    background: url(.././images/top_menu_bg.png) scroll 0 0 repeat;
+}
+
+.top-menu-selected {
+    background: url(.././images/top_menu_bg.png) scroll 0 0 repeat;   
+}
+
+/*==================================================================================================================
+==================================================================================================================== <<< HEADER
+====================================================================================================================
+==================================================================================================================*/
+
+/*==================================================================================================================
+====================================================================================================================
+NAVIGATION >>>
+====================================================================================================================
+==================================================================================================================*/
+
+nav {   
+    height: -webkit-calc(100% - 100px);
+    height: -moz-calc(100% - 100px);
+    height: calc(100% - 100px);
+    width: 250px;
+    background-color: #dedede;
+    float: left;
+}
+
+nav > ul > li {
+    height: 49px;
+    width: 100%;
+    border-bottom: 1px solid #ffffff;
+    float: left;
+    clear: both;
+    text-align: left;
+    line-height: 49px;
+    padding: 0 0 0 10px;
+    color: #777777;
+    font-size: 14px;
+    cursor: pointer;
+    -webkit-transition: background-color 0.2s ease-in-out;
+    -moz-transition: background-color 0.2s ease-in-out;
+    -o-transition: background-color 0.2s ease-in-out;
+    -ms-transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
+}
+
+nav > ul > li:hover {
+    background-color: #ffffff;
+}
+
+.navigation-seleted {
+    background-color: #ffffff;   
+}
+
+/*==================================================================================================================
+==================================================================================================================== <<< NAVIGATION
+====================================================================================================================
+==================================================================================================================*/
+
+/*==================================================================================================================
+====================================================================================================================
+MAIN STAGE >>>
+====================================================================================================================
+==================================================================================================================*/
+
+section {
+    height: -webkit-calc(100% - 100px);
+    height: -moz-calc(100% - 100px);
+    height: calc(100% - 100px);
+    width: -webkit-calc(100% - 250px);
+    width: -moz-calc(100% - 250px);
+    width: calc(100% - 250px);
+    background-color: #ffffff;
+    float: right;
+}
+
+.main-stage-holder {
+    height: -webkit-calc(90% - 12px);
+    height: -moz-calc(90% - 12px);
+    height: calc(90% - 12px);
+    width: -webkit-calc(100% - 12px);
+    width: -moz-calc(100% - 12px);
+    width: calc(100% - 12px);   
+    margin: 6px auto;
+    position: relative;
+    overflow-y: scroll;
+}
+
+/*==================================================================================================================
+LAYOUT ELEMENTS >>>
+==================================================================================================================*/
+
+.arrata-column {
+    height: auto;
+    min-height: 40px;
+    float: left;
+    margin-left: 1%;
+    margin-top: 1%;
+    background: #ffffff;
+}
+
+.one-full {
+    width: 98%;
+}
+
+.one-half {
+    width: 48.5%;
+}
+
+.one-third {
+    width: 32%;
+}
+
+.one-forth {
+    width: 23.75%;
+}
+
+.one-fifth {
+    width: 18.8%;
+}
+
+.two-third {
+    width: 64%;  
+}
+
+.three-forth {
+    width: 71.75%;
+}
+
+.four-fifth {
+    width: 75.2%;   
+}
+
+.last-column {
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+}
+
+/*==================================================================================================================
+FORM ELEMENTS >>>
+==================================================================================================================*/
+
+.arrata-column > input {
+    height: 28px;
+    width: -webkit-calc(60% - 22px);
+    width: -moz-calc(60% - 22px);
+    width: calc(60% - 22px);
+    border: 1px solid #c7c7c7;
+    padding: 5px 10px;
+    float: right;
+    color: #666666;
+    font-size: 14px;
+}
+
+.arrata-column > textarea {
+    height: 28px;
+    width: -webkit-calc(100% - 22px);
+    width: -moz-calc(100% - 22px);
+    width: calc(100% - 22px);
+    border: 1px solid #c7c7c7;
+    padding: 5px 10px;
+    color: #666666;
+    font-size: 14px;
+}
+
+.arrata-column > input:focus, .arrata-column > select:focus {
+   /*outline: 3px solid red; */
+}   
+
+.arrata-column > select {
+    height: 40px;
+    width: 60%;
+    border: 1px solid #c7c7c7;
+    padding: 5px 10px;
+    float: right;
+    color: #666666;
+    font-size: 14px;
+    outline: 0;
+}
+
+.arrata-column > label {
+    float: left;
+    width: 40%;
+    line-height: 40px;
+    color: #333333;
+    font-size: 14px;
+}
+
+td > input {
+    height: 28px;
+    width: -webkit-calc(95% - 22px);
+    width: -moz-calc(95% - 22px);
+    width: calc(95% - 22px);
+    border: 1px solid #c7c7c7;
+    padding: 5px 10px;
+    color: #666666;
+    font-size: 14px;
+    /*background-color: #ffffff;*/
+}
+
+td > select {
+    height: 40px;
+    width: 95%;
+    border: 1px solid #c7c7c7;
+    padding: 5px 10px;
+    color: #666666;
+    font-size: 14px;
+    outline: 0;
+}
+
+input[type='checkbox'] {
+    height: 17px;
+    cursor: pointer;
+}
+
+/* ========== MULTIPLE CHECKBOXES SELECTION ========== */
+
+.checkbox-column {
+    /*position: absolute;*/
+    /*height: -webkit-calc(100% - 300px);
+    height: -moz-calc(100% - 300px);
+    height: calc(100% - 300px);*/
+    min-height: 84px;
+    max-height: 100px;
+    width: -webkit-calc(98% - 2px);
+    width: -moz-calc(98% - 2px);
+    width: calc(98% - 2px);  
+    overflow-y: scroll;
+    border: 1px solid #c7c7c7;
+}
+
+.checkbox-column > ul > li {
+    float: left;
+    width: 18.8%;
+    margin: 1% 0 0 1%;
+}
+
+.arrata-column > h1 {
+    font-size: 14px;
+    font-weight: 300;
+    padding: 10px 0 0 0;
+    text-transform: uppercase;
+    float: left;
+    margin-right: 10px;
+}
+
+.arrata-column > p {
+    font-size: 14px;
+    font-weight: 300;
+    padding: 12px 0 0 0;
+    text-transform: uppercase;
+    float: left;
+    margin-right: 10px;
+}
+
+/*==================================================================================================================
+BUTTON ELEMENTS >>>
+==================================================================================================================*/
+
+.arrata-button {
+    height: 30px; 
+    -moz-box-shadow: 1px 1px 3px #999999;
+    -webkit-box-shadow: 1px 1px 3px #999999;
+    box-shadow: 1px 1px 3px #999999;
+    outline: 0;
+    padding: 0;
+    border: 0;
+    color: #ffffff;
+    cursor: pointer;
+    margin: 0 0 0 7px;
+}
+
+.arrata-button:active {
+    -moz-box-shadow: 0 0 0 #999999;
+    -webkit-box-shadow: 0 0 0 #999999;
+    box-shadow: 0 0 0 #999999;
+}
+
+/* ************************ */
+
+.arrata-button-wide {
+    width: 80px;   
+}
+
+.arrata-button-square {
+    width: 30px;   
+}
+
+/* ************************ */
+
+.arrata-button-green {
+    background-color: #54a992;
+    background: -webkit-linear-gradient(#5dad98, #50a18b); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#5dad98, #50a18b); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#5dad98, #50a18b); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#5dad98, #50a18b); /* Standard syntax */
+}
+
+.arrata-button-blue {
+    background-color: #5cbddd;
+    background: -webkit-linear-gradient(#64c0df, #58b4d2); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#64c0df, #58b4d2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#64c0df, #58b4d2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#64c0df, #58b4d2); /* Standard syntax */
+}
+
+.arrata-button-red {
+    background-color: #d94c3a;   
+    background: -webkit-linear-gradient(#db5544, #ce4837); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#db5544, #ce4837); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#db5544, #ce4837); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#db5544, #ce4837); /* Standard syntax */
+}
+
+.last-column > .arrata-button {
+    float: right;
+}
+
+/*==================================================================================================================
+TABLE ELEMENTS >>>
+==================================================================================================================*/
+
+.arrata-column > table {
+    width: 100%; 
+    height: auto;
+}
+
+.arrata-column > table > thead {
+    background-color: #73767b;
+    height: 50px;
+    /*line-height: 50px;*/
+    color: #ffffff; 
+    text-transform: uppercase;
+}
+
+.arrata-column > table > thead > tr > th {
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    height: 50px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.arrata-column > table > tbody > tr {
+    height: 50px;  
+    text-align: center;
+    line-height: 50px;
+}
+
+.arrata-column > table > tbody > tr > td {
+    color: #0a0a0a;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.arrata-column > table > tbody > tr:nth-child(2n+2)  {
+    background-color: #f7f7f7;  
+}
+
+.arrata-column > table > tbody > tr:last-child  {
+    border-bottom: 1px solid #c7c7c7;  
+}
+
+/* ========== OPTION TOGGLER ON SELECT ========== */
+
+.tables-selection-holder {
+    display: none;
+}
+
+.tables-selected-show {
+    display: inline;
+}
+
+/*==================================================================================================================
+DATEPICKER >>>
+==================================================================================================================*/
+
+.ui-datepicker {
+    -moz-box-shadow: 1px 1px 3px #999999;
+    -webkit-box-shadow: 1px 1px 3px #999999;
+    box-shadow: 1px 1px 3px #999999;
+    background-color: #ffffff;
+}
+
+.ui-datepicker-header {
+    height: 61px;
+    line-height: 61px;
+    border: 1px 1px 0 1px solid #c7c7c7;
+    background-color: #d94c3a;
+}
+
+.ui-datepicker-prev {
+    float: left;
+    margin: 25px 0 0 10px;
+    height: 11px;
+    width: 6px;
+    text-indent: -9999px;
+    background: url(../images/calendar_arrows.png) scroll 0 -11px no-repeat;
+    cursor: pointer;
+}
+
+.ui-datepicker-next {
+    float: right;
+    margin: 25px 10px 0 0; 
+    height: 11px;
+    width: 6px;
+    text-indent: -9999px;
+    background: url(../images/calendar_arrows.png) scroll 0 0 no-repeat;
+    cursor: pointer;
+}
+
+.ui-datepicker-title {
+    text-align: center; 
+    color: #ffffff;
+}
+
+.ui-datepicker-calendar {
+    height: 175px;
+    width: 275px;
+    border: 0 1px 1px 1px solid #c7c7c7;
+}
+
+.ui-datepicker-calendar > thead > tr {
+    background-color: #d94c3a;
+    height: 40px;
+    line-height: 40px;
+    
+}
+
+.ui-datepicker-calendar > thead > tr > th {
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.ui-datepicker-calendar > tbody > tr {
+    background-color: #eeeeee;
+    height: 40px;
+    line-height: 40px;
+    font-weight: 300;
+    text-align: center;
+    padding: 0;
+}
+
+.ui-datepicker-calendar > tbody > tr > td {
+    -webkit-transition: background-color 0.2s ease-in-out;
+    -moz-transition: background-color 0.2s ease-in-out;
+    -o-transition: background-color 0.2s ease-in-out;
+    -ms-transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.ui-datepicker-calendar > tbody > tr > td:hover {
+    background-color: #ffffff;
+}
+
+td.ui-datepicker-current-day {
+    background-color: #d94c3a;
+    color: #ffffff;   
+}
+
+.ui-datepicker-other-month {
+    color: #c7c7c7;   
+}
+
+/*==================================================================================================================
+TABS >>>
+==================================================================================================================*/
+
+.ui-tabs {
+    width: 100%; 
+    height: auto;
+    float: left;   
+}
+
+.ui-tabs-nav {
+    height: 50px;
+    width: 98%;
+    margin-top: 1%;
+    margin-left: 1%;
+    background-color: #bebebe;
+    text-transform: uppercase;
+}
+
+.ui-tabs-nav > li {
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    /*line-height: 50px;
+    /*width: 125px;
+    height: 100%;*/
+}
+
+.ui-tabs-nav > li > a {
+    padding: 16px 50px 17px; 
+    line-height: 50px;
+    font-size: 15px;
+    outline: 0;
+    -webkit-transition: background-color 0.2s ease-in-out;
+    -moz-transition: background-color 0.2s ease-in-out;
+    -o-transition: background-color 0.2s ease-in-out;
+    -ms-transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.ui-tabs-nav > li > a:hover {
+    background-color: #afafaf;
+    cursor: pointer;
+}
+
+.ui-tabs-active {
+    background-color: #73767b;   
+}
+
+.ui-tabs-active > a:hover {
+    background-color: #73767b !important;
+}
+
+.ui-tabs-panel {
+
+}
+
+/*==================================================================================================================
+==================================================================================================================== <<< MAIN STAGE
+====================================================================================================================
+==================================================================================================================*/
