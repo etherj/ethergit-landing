@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="177px"
+	 height="79px" viewBox="0 0 177 79" enable-background="new 0 0 177 79" xml:space="preserve">
+<g id="Button">
+	<path fill="none" stroke="#EAAC4D" stroke-width="2" stroke-miterlimit="10" d="M105.703,10.346h53.74
+		c6.383,0,11.557,5.118,11.557,11.431v42.293c0,6.313-5.174,11.431-11.557,11.431H15.557C9.174,75.5,4,70.383,4,64.069V21.776
+		c0-6.313,5.174-11.431,11.557-11.431h52.585"/>
+</g>
+<g id="Icon">
+	<g>
+		<path fill="#FFFFFF" d="M84.159,15.802l-9.751-4.179V9.291l9.751-4.165v2.732l-6.799,2.572l6.799,2.666V15.802z"/>
+		<path fill="#FFFFFF" d="M85.053,17.062l3.219-13.146h2.045l-3.26,13.146H85.053z"/>
+		<path fill="#FFFFFF" d="M91.514,15.815V13.11l6.812-2.652l-6.812-2.626V5.139l9.751,4.18v2.305L91.514,15.815z"/>
+	</g>
+</g>
+</svg>

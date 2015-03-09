@@ -12,23 +12,15 @@ apply plugin: 'eclipse'
 apply plugin: 'idea'
 apply plugin: 'spring-boot'
 
-jar {
-    baseName = 'gs-device-detection'
-    version =  '0.1.0'
-}
-
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    compile("org.springframework.boot:spring-boot-starter-web")
-    compile("org.springframework.boot:spring-boot-starter-mobile")
     compile("org.springframework.boot:spring-boot-starter-thymeleaf")
     compile("net.sourceforge.nekohtml:nekohtml:1.9.15")
-
 }
 
 task wrapper(type: Wrapper) {
-    gradleVersion = '1.11'
+    gradleVersion = '2.2.1'
 }
