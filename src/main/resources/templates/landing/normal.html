@@ -1,87 +1,52 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
-
 <head>
+    <title>EtherGit | The web gate to Ethereum</title>
 
-    <!-- >>> TITLE >>> -->
+    <meta charset="utf-8">
+    <meta name="description" content="EtherGit provides tools to browse and analyze the Ethereum network" />
+    <meta name="keywords" content="ethereum, ethereum contract, ethereum network, blockchain, block chain, wei, szabo, finney, ether, crypto currency, web 3, , whisper, swarm" />
+    <meta name="viewport" width="device-width,initial-scale=1">
 
-		<title>EtherGit | The first web gate into Ethereum.</title>
+    <link href="/resources/styles/reset.css" rel="stylesheet" type="text/css" />
+    <link href="/resources/styles/style.css" rel="stylesheet" type="text/css" />
+    <link href="/resources/styles/style_responsive.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <section>
+        <div class="wrapper content-holder">
+            <a href="//ethergit.com/" target="_self">
+                <div class="logo-holder indenter">
+                    <h1>Welcome to EtherGit | The web gate to Ethereum</h1>
+                </div>
+            </a>
 
-        <!-- >>> META TAGS >>> -->
+            <p> <span class="weight-800"> Ethereum is going live </span> <br /> and we are building the best <br /> web gate into the matrix.</p>
 
-		<meta charset='UTF-8'>
-		<meta name="keywords" content="client input missing" />
-		<meta name="description" content="client input missing" />
+            <a href="//forum.ethergit.com/" target="_self">
+                <button class="call-to-action action-ask">ask us anything</button>
+            </a>
+            <a href="//dev.ethergit.com/" target="_self">
+                <button class="call-to-action action-follow">dev.ethergit.com</button>
+            </a>
+        </div>
+    </section>
 
-        <!-- >>> STYLES/CSS >>> -->
+    <footer>
+        <div class="wrapper">
+            <a href="//ethergit.com/" target="_self">
+                <div class="footer-logo"></div>
+            </a>
+        </div>
+    </footer>
 
-        <link rel="SHORTCUT ICON" href="/resources/images/favicon.png"/>
-        <link href="/resources/styles/reset.css" rel="stylesheet" type="text/css" />
-		<link href="/resources/styles/style.css" rel="stylesheet" type="text/css" />
-
-        <!-- >>> SCRIPTS/JS >>> -->
-
-        <script src="/resources/scripts/jquery-1.11.1/jquery-1.11.1.min.js" type="text/javascript"></script>
-        <script src="/resources/scripts/jquery-ui-1.11.0/jquery-ui.min.js" type="text/javascript"></script>
-        <script src="/resources/scripts/script.js" type="text/javascript"></script>
-
-	</head>
-
-	<body>
-
-        <video poster="/resources/images/fallback_background.jpg" autoplay loop>
-            <source src="/resources/images/stars.mov" type="video/webm"/>
-            <source src="/resources/images/stars.ogv" type="video/ogg"/>
-            <source src="/resources/images/stars.mp4" type="video/mp4"/>
-        </video>
-
-        <section>
-
-            <div class="wrapper content-holder">
-
-                <a href="http://www.ethergit.com/">
-                    <div class="logo-holder indenter">
-                        <h1>Welcome to EtherGit | THE web gate to Ethereum.</h1>
-                    </div>
-                </a>
-
-                <p> <span class="weight-800"> Ethereum is going live </span> </br> and we are building the best </br> web gate into the matrix.</p>
-
-                <a href="http://dev.ethergit.com/" target="_self"><button class="call-to-action action-follow">dev.ethergit.com</button></a>
-                <a href="http://forum.ethergit.com/categories/all" target="_self"><button class="call-to-action action-ask">ask us anything</button></a>
-
-            </div>
-
-        </section>
-
-        <footer>
-
-            <div class="wrapper">
-                <a href="http://www.ethergit.com/"><img class="footer-logo" src="/resources/images/logo_white_small.png" height="24" width="107" alt="EtherGit | THE web gate to etherium" title="EtherGit | THE web gate to etherium" /></a>
-            </div>
-
-        </footer>
+    <video id="bg-video" autoplay loop>
+        <source src="//s3.amazonaws.com/ethergit-landing-video/stars.mov" type="video/webm">
+        <source src="//s3.amazonaws.com/ethergit-landing-video/stars.ogv" type="video/ogg">
+        <source src="//s3.amazonaws.com/ethergit-landing-video/stars.mp4" type="video/mp4">
+    </video>
 
     <script th:replace="fragments::analytics"></script>
-
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

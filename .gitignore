@@ -1,0 +1,20 @@
+# Vim
+*.sw[op]
+
+# Gradle
+.gradle
+build
+
+# IDEA
+.idea
+!.idea/codeStyleSettings.xml
+!.idea/sqldialects.xml
+!.idea/vcs.xml
+*.iml
+
+# Logs
+logs
+*.log
+
+# Other
+database
