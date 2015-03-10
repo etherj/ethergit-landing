@@ -18,7 +18,7 @@ class MvcConfig extends WebMvcConfigurerAdapter {
 
         registry.addResourceHandler("/resources/images/**")
                 .addResourceLocations("/resources/images/")
-                .setCachePeriod(0);
+                .setCachePeriod(36000);
 
         registry.addResourceHandler("/resources/scripts/**")
                 .addResourceLocations("/resources/scripts/")
