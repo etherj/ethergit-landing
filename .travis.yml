@@ -1,0 +1,16 @@
+sudo: false
+
+language: java
+jdk: oraclejdk8
+
+install: ./gradlew assemble --refresh-dependencies
+
+cache:
+  directories:
+    - $HOME/.gradle
+
+deploy:
+  provider: heroku
+  buildpack: gradle
+  api_key:
+    secure: M8ZJ/B/3nyT2sCxYAWLfvTOgz9H0IzXA+ZQF0/mtxWRbs2WZhZUZNwxzExFE/3+9zG5rUnKg+DnKFEvRE7e4F2D5HwxlcTJWlW7i4fDzuPNSAvGQNEnNWGTWRcRyQWxcWaFUBvJd745r3tjljCemoV50xQ++eeBfRn6MF7Hgbgg=
