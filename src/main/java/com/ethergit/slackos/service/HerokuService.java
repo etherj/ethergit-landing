@@ -25,7 +25,7 @@ public class HerokuService {
     }
 
 
-    public String getLast10Releases(){
+    public String getLast10Releases() {
 
         Map<String, String> headersMap = new HashMap<>();
         headersMap.put("Accept", "application/json");
@@ -37,16 +37,22 @@ public class HerokuService {
         HttpEntity entity = new HttpEntity(headers);
 
         ResponseEntity<List<Release>> res =
-                restTemplate.exchange("https://api.heroku.com/apps/ethergit-site/releases", HttpMethod.GET, entity, new ParameterizedTypeReference<List<Release>>(){});
+                restTemplate.exchange("https://api.heroku.com/apps/ethergit-site/releases", HttpMethod.GET, entity, new ParameterizedTypeReference<List<Release>>() {
+                });
 
         StringBuffer buffer = new StringBuffer();
 
         int last = res.getBody().size() - 1;
-        for (int i = 0; i < 10; ++i){
+        for (int i = 0; i < 10; ++i) {
 
             Release release = res.getBody().get(last - i);
 
-            buffer.append(release.getCommit() + " | " + release.getName() + " | \n");
+            String releaseRaw =
+                    String.format("%s | %s | %s | %s \n",
+                            release.getCommit(), release.getName(),
+                            release.getCreated_at(), release.getDescr());
+
+            buffer.append(releaseRaw);
         }
 
         return buffer.toString();
